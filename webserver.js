@@ -1,13 +1,13 @@
 const express = require('express')
-const app = express()
+const webserver = express()
 const port = 3000
 
-app.get('/', (req, res) => {
+webserver.get('/', (req, res) => {
   res.send('Hello World')
 })
 
-app.listen(port, () => {
+webserver.listen(port, () => {
   console.log(`Webserver is running on port: ${port}`)
 })
 
-module.exports = app;
+module.exports = webserver;
