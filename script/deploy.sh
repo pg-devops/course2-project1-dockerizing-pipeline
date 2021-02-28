@@ -1,4 +1,4 @@
-ssh ubuntu@aws_stage <<EOF
+:ssh ubuntu@aws_stage <<EOF
     cd ~/node-app
     git pull origin master
     curl -o- https://github.com/pg-devops/course2-project1-dockerizing-pipeline.git    | bash
