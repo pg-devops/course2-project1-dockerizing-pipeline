@@ -1,5 +1,5 @@
 const request = require('supertest');
-const webserver = require('../webserver');
+const webserver = require('../webserver.js');
 
 describe('GET /', () => {
   it('Respond with Hello World', (done) =>  {
